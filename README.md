@@ -39,4 +39,19 @@ spring-slice-testing-demo/
 └── src/main/resources/application.properties
 ```
 
+---
+
+## 🔄 Fluxo do Slice Test
+
+```mermaid
+flowchart TD
+    A[Início do Teste] --> B[@WebMvcTest carrega apenas ProductController]
+    B --> C[MockBean substitui ProductService real]
+    C --> D[MockMvc envia requisição GET /products]
+    D --> E[Controller retorna lista mockada]
+    E --> F[MockMvc valida Status, JSON e Headers]
+    F --> G[Fim do Teste]
+
+```
+
 
