@@ -1,16 +1,15 @@
 plugins {
-    java
+    id("java")
     id("org.springframework.boot") version "3.5.4"
-    id("io.spring.dependency-management") version "1.1.7"
+    id("io.spring.dependency-management") version "1.1.6"
 }
 
 group = "com.example"
 version = "0.0.1-SNAPSHOT"
-description = "spring-slice-testing"
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
+        languageVersion.set(JavaLanguageVersion.of(21))
     }
 }
 
@@ -19,11 +18,13 @@ repositories {
 }
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter")
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
-    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+    implementation("org.springframework.boot:spring-boot-starter-web")
+
+    testImplementation("org.springframework.boot:spring-boot-starter-test") {
+        exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
+    }
 }
 
-tasks.withType<Test> {
+tasks.test {
     useJUnitPlatform()
 }
