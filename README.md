@@ -23,4 +23,20 @@ Este projeto demonstra como realizar **Slice Testing** no Spring Boot usando `@W
 
 ## 📂 Estrutura de Pastas
 
+```text
+spring-slice-testing-demo/
+├── build.gradle.kts
+├── src
+│ ├── main
+│ │ └── java/com/example/springslicetest
+│ │ ├── SpringSliceTestingDemoApplication.java
+│ │ ├── controller/ProductController.java
+│ │ ├── entity/Product.java
+│ │ ├── service/ProductService.java
+│ └── test
+│ └── java/com/example/springslicetest
+│ └── ProductControllerSliceTest.java
+└── src/main/resources/application.properties
+```
+
 
