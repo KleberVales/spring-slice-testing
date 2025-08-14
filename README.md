@@ -45,7 +45,7 @@ spring-slice-testing-demo/
 
 ```mermaid
 flowchart TD
-    A[Início do Teste] --> B[@WebMvcTest carrega apenas ProductController]
+    A[Início do Teste] --> B[WebMvcTest carrega apenas ProductController]
     B --> C[MockBean substitui ProductService real]
     C --> D[MockMvc envia requisição GET /products]
     D --> E[Controller retorna lista mockada]
