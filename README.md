@@ -11,3 +11,14 @@ Este projeto demonstra como realizar **Slice Testing** no Spring Boot usando `@W
 
 ---
 
+## 🏗 Tecnologias Utilizadas
+- **Java 21**
+- **Spring Boot 3**
+- **Spring Web**
+- **JUnit 5**
+- **MockMvc**
+- **Mockito**
+
+---
+
+
