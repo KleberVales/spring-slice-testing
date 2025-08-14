@@ -54,4 +54,13 @@ flowchart TD
 
 ```
 
+## 🚀 Como Executar o Teste
+
+```bash
+
+# Executar todos os testes
+./gradlew test
+
+```
+
 
