@@ -4,3 +4,10 @@ Este projeto demonstra como realizar **Slice Testing** no Spring Boot usando `@W
 
 ---
 
+## 📚 Objetivo
+- Testar **somente a camada de Controller** sem inicializar todo o contexto da aplicação.
+- Usar **MockMvc** para simular requisições HTTP.
+- Simular o comportamento do **ProductService** usando `@MockBean`.
+
+---
+
